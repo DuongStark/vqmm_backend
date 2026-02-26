@@ -1,8 +1,8 @@
 # Dependencies
 node_modules/
 
-# Build output
-dist/
+# Build output – dist được commit lên để Render không cần build step
+# dist/
 
 # Environment variables
 .env
