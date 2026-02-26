@@ -6,13 +6,13 @@
     "node": ">=18"
   },
   "scripts": {
-    "postinstall": "node_modules/.bin/prisma generate",
+    "postinstall": "node node_modules/prisma/build/index.js generate",
     "dev": "ts-node src/index.ts",
-    "build": "node_modules/.bin/prisma generate && tsc",
+    "build": "node node_modules/prisma/build/index.js generate && tsc",
     "start": "node dist/index.js",
-    "db:push": "node_modules/.bin/prisma db push",
-    "db:generate": "node_modules/.bin/prisma generate",
-    "db:studio": "node_modules/.bin/prisma studio"
+    "db:push": "node node_modules/prisma/build/index.js db push",
+    "db:generate": "node node_modules/prisma/build/index.js generate",
+    "db:studio": "node node_modules/prisma/build/index.js studio"
   },
   "keywords": [],
   "author": "",
